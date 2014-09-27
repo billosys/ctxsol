@@ -1,0 +1,870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0079)http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/z.admin.ov-32/index.html -->
+<html class=" regenabled browserSafari radius jsenabled regloaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Commands Used on a Solaris System With Zones
+Installed (System Administration Guide: Oracle Solaris Containers-Resource Management and Oracle Solaris Zones) </title><link type="text/css" rel="stylesheet" href="./Commands Used on a Solaris System With Zones Installed_files/default.css"><link type="text/css" rel="stylesheet" href="./Commands Used on a Solaris System With Zones Installed_files/www.css"><link type="text/css" rel="stylesheet" href="./Commands Used on a Solaris System With Zones Installed_files/dsc.css"><script language="javascript1.2" type="text/javascript" src="./Commands Used on a Solaris System With Zones Installed_files/sniff.js"></script></head><body><div id="a0v0" class="a0 a0v0"><div class="a2w0"><div id="a2v7" class="a2"><div class="a2w1"><div class="a2w2"><div class="a2w3"><div class="a2w4"><div class="a2topiclinks"><div class="a2x1"></div><a id="sunlogo" title="Oracle Home Page" href="http://www.oracle.com/"><img width="98" height="58" border="0" alt="Oracle Homeage" src="./Commands Used on a Solaris System With Zones Installed_files/a.gif"></a><img width="1" height="33" border="0" alt="test" src="./Commands Used on a Solaris System With Zones Installed_files/a.gif" id="venuespacer"></div></div></div></div></div></div></div><div id="breadcrumb"><a href="http://www.oracle.com/technetwork/indexes/documentation/index.html">Documentation Home</a> &nbsp;&gt; <a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/index.html">System Administration Guide: Oracle Solaris Containers-Resource Management and Oracle Solaris Zones </a>  &nbsp;&gt; <a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/6mhahuotn/index.html">Part&nbsp;II Zones </a>  &nbsp;&gt; <a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/6mhahup7c/index.html">Chapter&nbsp;27 Solaris Zones Administration
+(Overview) </a>   &nbsp;&gt; Commands Used on a Solaris System With Zones
+Installed</div><br><div class="pagetitle" id="sharepage">System Administration Guide: Oracle Solaris Containers-Resource Management and Oracle Solaris Zones</div><div class="d8 d8v1" style="margin: 10px;"><div class="d8w1"><div class="d8w2"><div class="d8w3"><div class="d8w4"><ul><li class="d8left"><a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/gbbxz/index.html"><em>Previous</em>: About Restoring Non-Global Zones</a></li><li class="d8right"><a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/z.admin.task-1/index.html"><em>Next</em>: Chapter&nbsp;28 Solaris Zones Administration
+(Tasks)</a></li></ul></div></div></div></div></div><div class="pc11 imgMax-590" style="margin: 10px;"><a xmlns:str="http://xml.apache.org/xalan/java/java.lang.String" name="6mhahup9o"></a><h1 class="sol">Commands Used on a Solaris System With Zones
+Installed</h1>
+<p>
+<a name="indexterm-340"></a><a name="indexterm-341"></a><a name="indexterm-342"></a>The commands
+identified in <a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/6mhahup9o/index.html#z.admin.ov-tbl-33">Table&nbsp;27–3</a> provide
+the primary administrative interface to the zones facility.</p>
+<a name="z.admin.ov-tbl-33"></a>Table&nbsp;27–3  Commands Used to Administer
+Zones<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="top">
+<p>Command Reference&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>Description&nbsp;</p>
+
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/zlogin-1/index.html">zlogin(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Log in to a non-global zone&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/zonename-1/index.html">zonename(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Prints the name of the current zone&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/zoneadm-1m/index.html">zoneadm(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Administers zones on a system&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/zonecfg-1m/index.html">zonecfg(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Used to set up a zone configuration&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5168/getzoneid-3c/index.html">getzoneid(3C)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Used to map between zone ID and name&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5175/zones-5/index.html">zones(5)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Provides description of zones facility&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5177/zcons-7d/index.html">zcons(7D)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Zone console device driver&nbsp;</p>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>The <kbd>zoneadmd</kbd> daemon is the primary process for managing
+the zone's virtual platform. The man page for the <kbd>zoneadmd</kbd> daemon
+is zoneadmd(1M). The daemon does not constitute a programming interface.</p>
+<p>The commands in the next table are used with the resource capping daemon.</p>
+<a name="gepxj"></a>Table&nbsp;27–4  Commands Used With <kbd>rcapd</kbd><table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="top">
+<p>Command Reference&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>Description&nbsp;</p>
+
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/rcapstat-1/index.html">rcapstat(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Monitors the resource utilization of capped projects.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/rcapadm-1m/index.html">rcapadm(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Configures the resource capping daemon, displays the current status
+of the resource capping daemon if it has been configured, and enables or disables
+resource capping. Also used to set a temporary memory cap.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/rcapd-1m/index.html">rcapd(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>The resource capping daemon.&nbsp;</p>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>The commands identified in the following table have been modified for
+use on a Solaris system with zones installed. These commands have options
+that are specific to zones or present information differently. The commands
+are listed by man page section.</p>
+<a name="z.admin.ov-tbl-34"></a>Table&nbsp;27–5  Commands Modified for Use
+on a Solaris System With Zones Installed<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="top">
+<p>Command Reference&nbsp;</p>
+
+</th><th scope="col" align="left" valign="top">
+<p>Description&nbsp;</p>
+
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/ipcrm-1/index.html">ipcrm(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <kbd><b>-z</b></kbd> <var>zone</var> option. This
+option is only useful when the command is executed in the global zone.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/ipcs-1/index.html">ipcs(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <kbd><b>-z</b></kbd> <var>zone</var> option. This
+option is only useful when the command is executed in the global zone.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/pgrep-1/index.html">pgrep(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <kbd><b>-z</b></kbd> <var>zoneidlist</var> option.
+This option is only useful when the command is executed in the global zone.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/ppriv-1/index.html">ppriv(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added the expression <tt>zone</tt> for use with the <kbd><b>-l</b></kbd> option
+to list all privileges available in the current zone. Also use the option <kbd><b>-v</b></kbd> after <tt>zone</tt> to obtain verbose output.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/priocntl-1/index.html">priocntl(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Zone ID can be used in <var>idlist</var> and <kbd><b>-i</b></kbd> <var>idtype</var> to specify processes. You can use the <kbd>priocntl</kbd> <kbd><b>-i</b></kbd> <var>zoneid</var> command to move running processes
+into a different scheduling class in a non-global zone.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/proc-1/index.html">proc(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <kbd><b>-z</b></kbd> <var>zone</var> option to <tt>ptree</tt> only. This option is only useful when the command is executed
+in the global zone.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/ps-1/index.html">ps(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <var>zonename</var> and <var>zoneid</var> to
+list of recognized <tt>format</tt> names used with the <kbd><b>-o</b></kbd> option.</p>
+<p>Added <kbd><b>-z</b></kbd> <var>zonelist</var> to list
+only processes in the specified zones. Zones can be specified either by zone
+name or by zone ID. This option is only useful when the command is executed
+in the global zone.</p>
+<p>Added <kbd><b>-Z</b></kbd> to print the name of the zone associated with
+the process. The name is printed under an additional column header, <tt>ZONE</tt>.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/renice-1/index.html">renice(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <var>zoneid</var> to list of valid arguments used
+with the <kbd><b>-i</b></kbd> option.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5165/sar-1/index.html">sar(1)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If executed in a non-global zone in which the pools facility is enabled,
+the <kbd><b>-b</b></kbd>, <kbd><b>-c</b></kbd> <kbd><b>-g</b></kbd>, <kbd><b>-m</b></kbd>, <kbd><b>-p</b></kbd>, <kbd><b>-u</b></kbd>, <kbd><b>-w</b></kbd>, and <kbd><b>-y</b></kbd> options
+display values only for processors that are in the processor set of the pool
+to which the zone is bound.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/auditconfig-1m/index.html">auditconfig(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>zonename</tt> token.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/auditreduce-1m/index.html">auditreduce(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <kbd><b>-z</b></kbd> <var>zone-name</var> option.
+Added ability to get an audit log of a zone.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/coreadm-1m/index.html">coreadm(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added variable <tt>%z</tt> to identify the zone in which process
+executed.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/df-1m/index.html">df(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <kbd><b>-Z</b></kbd> option to display mounts in all visible zones.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/ifconfig-1m/index.html">ifconfig(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>zone</tt> option for global zone use (the default),
+and <kbd><b>-zone</b></kbd> <var>zonename</var> for non-global
+zone use.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/iostat-1m/index.html">iostat(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If executed in a non-global zone in which the pools facility is enabled,
+information is provided only for those processors that are in the processor
+set of the pool to which the zone is bound.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/kstat-1m/index.html">kstat(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If executed in the global zone, <tt>kstat</tt>s are displayed
+for all zones. If executed in a non-global zone, only <tt>kstat</tt>s
+with a matching <var>zoneid</var> are displayed.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/mpstat-1m/index.html">mpstat(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If executed in a non-global zone in which the pools facility is enabled,
+command only displays lines for the processors that are in the processor set
+of the pool to which the zone is bound.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/ndd-1m/index.html">ndd(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>When used in the global zone, displays information for all zones. <tt>ndd</tt> on the TCP/IP modules in an exclusive-IP zone only displays
+information for that zone.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/netstat-1m/index.html">netstat(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Displays information for the current zone only.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/nfsstat-1m/index.html">nfsstat(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Displays statistics for the current zone only.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/poolbind-1m/index.html">poolbind(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <var>zoneid</var> list. Also see <a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/gdoqj/index.html">Resource Pools Used in Zones</a> for information about
+using zones with resource pools.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/prstat-1m/index.html">prstat(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <kbd><b>-z</b></kbd> <var>zoneidlist</var> option.
+Also added <kbd><b>-Z</b></kbd> option.</p>
+<p> If executed in a non-global zone in which the pools facility is enabled,
+the percentage of recent CPU time used by the process is displayed only for
+the processors in the processor set of the pool to which the zone is bound.&nbsp;</p>
+<p>Output of the <kbd><b>-a</b></kbd>, <kbd><b>-t</b></kbd>, <kbd><b>-T</b></kbd>, <kbd><b>-J</b></kbd>, and <kbd><b>-Z</b></kbd> options displays a SWAP instead of a SIZE
+column. The swap reported is the total swap consumed by the zone's processes
+and <tt>tmpfs</tt> mounts. This value assists in monitoring the
+swap reserved by each zone, which can be used to choose a reasonable <tt>zone.max-swap</tt> setting.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/psrinfo-1m/index.html">psrinfo(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If executed in a non-global zone, only information about the processors
+visible to the zone is displayed.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/traceroute-1m/index.html">traceroute(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Usage change. When specified from within a non-global zone, the <kbd><b>-F</b></kbd> option
+has no effect because the “don't fragment” bit is always set.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5166/vmstat-1m/index.html">vmstat(1M)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>When executed in a non-global zone in which the pools facility is enabled,
+statistics are reported only for the processors in the processor set of the
+pool to which the zone is bound. Applies to output from the <kbd><b>-p</b></kbd> option
+and the <tt>page</tt>, <tt>faults</tt>, and <tt>cpu</tt> report
+fields.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/auditon-2/index.html">auditon(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>AUDIT_ZONENAME</tt> to generate a zone ID token
+with each audit record.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/priocntl-2/index.html">priocntl(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>P_ZONEID</tt> <var>id</var> argument.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/processor-info-2/index.html">processor_info(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility is enabled,
+but the processor is not in the processor set of the pool to which the zone
+is bound, an error is returned.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/p-online-2/index.html">p_online(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility is enabled,
+but the processor is not in the processor set of the pool to which the zone
+is bound, an error is returned.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/pset-bind-2/index.html">pset_bind(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>P_ZONEID</tt> as <var>idtype</var>.
+Added zone to possible choices for <tt>P_MYID</tt> specification.
+Added <tt>P_ZONEID</tt> to valid <var>idtype</var> list
+in <tt>EINVAL</tt> error description.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/pset-info-2/index.html">pset_info(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility is enabled,
+but the processor is not in the processor set of the pool to which the zone
+is bound, an error is returned.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/pset-list-2/index.html">pset_list(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility is enabled,
+but the processor is not in the processor set of the pool to which the zone
+is bound, an error is returned.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/pset-setattr-2/index.html">pset_setattr(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility is enabled,
+but the processor is not in the processor set of the pool to which the zone
+is bound, an error is returned.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/sysinfo-2/index.html">sysinfo(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Changed <tt>PRIV_SYS_CONFIG</tt> to <tt>PRIV_SYS_ADMIN</tt>.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5167/umount-2/index.html">umount(2)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>
+<tt>ENOENT</tt> is returned if file pointed to by <var>file</var> is not an absolute path.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5168/getloadavg-3c/index.html">getloadavg(3C)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility is enabled,
+the behavior is equivalent to calling with a <tt>psetid</tt> of <tt>PS_MYID</tt>.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5168/getpriority-3c/index.html">getpriority(3C)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added zone IDs to target processes that can be specified. Added zone
+ID to <tt>EINVAL</tt> error description.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5168/priv-str-to-set-3c/index.html">priv_str_to_set(3C)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added “zone” string for the set of all privileges available
+within the caller's zone.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5168/pset-getloadavg-3c/index.html">pset_getloadavg(3C)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility is enabled,
+but the processor is not in the processor set of the pool to which the zone
+is bound, an error is returned.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5168/sysconf-3c/index.html">sysconf(3C)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>If the caller is in a non-global zone and the pools facility enabled, <tt>sysconf(_SC_NPROCESSORS_CONF)</tt> and <tt>sysconf(_SC_NPROCESSORS_ONLN)</tt>   return the number of processors in the processor set of the pool
+to which the zone is bound.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5168/ucred-get-3c/index.html">ucred_get(3C)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>ucred_getzoneid()</tt> function, which returns the
+zone ID of the process or <tt>-1</tt> if the zone ID is not available.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5174/core-4/index.html">core(4)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>n_type: NT_ZONENAME</tt>. This entry contains a
+string that describes the name of the zone in which the process was running.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5174/pkginfo-4/index.html">pkginfo(4)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Now provides optional parameters and an environment variable in support
+of zones.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5174/proc-4/index.html">proc(4)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added capability to obtain information on processes running in zones.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5175/audit-syslog-5/index.html">audit_syslog(5)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>in&lt;</tt><var>zone name</var><tt>&gt;</tt> field that is used if the <tt>zonename</tt> audit policy
+is set.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5175/privileges-5/index.html">privileges(5)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>PRIV_PROC_ZONE</tt>, which allows a process to trace
+or send signals to processes in other zones. See zones(5). </p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5177/if-tcp-7p/index.html">if_tcp(7P)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added zone <tt>ioctl()</tt> calls.</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5180/cmn-err-9f/index.html">cmn_err(9F)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added zone parameter.&nbsp;</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<a href="http://docs.oracle.com/docs/cd/E19253-01/816-5180/ddi-cred-9f/index.html">ddi_cred(9F)</a>
+</p>
+
+</td><td align="left" valign="top">
+<p>Added <tt>crgetzoneid()</tt>, which returns the zone ID from
+the user credential pointed to by <tt>cr</tt>.</p>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p>
+</div><div class="d8 d8v1" style="margin: 10px;"><div class="d8w1"><div class="d8w2"><div class="d8w3"><div class="d8w4"><ul><li class="d8left"><a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/gbbxz/index.html"><em>Previous</em>: About Restoring Non-Global Zones</a></li><li class="d8right"><a href="http://docs.oracle.com/cd/E19112-01/ctr.mgr11/817-1592/z.admin.task-1/index.html"><em>Next</em>: Chapter&nbsp;28 Solaris Zones Administration
+(Tasks)</a></li></ul></div></div></div></div></div><div class="a5 a5v0" id="a5">
+<ul>
+    <li class="copyright">© 2010, Oracle Corporation and/or its affiliates</li>
+</ul>
+</div>
+</div></body></html>
