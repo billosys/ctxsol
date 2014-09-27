@@ -1,9 +1,12 @@
 # ctxsol
 
+<img src="resources/images/ctxsol-small-crop.png" />
+
+*An Erlang/LFE Solaris Containers/Zones Library*
 
 ## Introduction
 
-Add content to me here!
+More to come ...
 
 
 ## Installation
@@ -13,7 +16,7 @@ Just add it to your ``rebar.config`` deps:
 ```erlang
     {deps, [
         ...
-        {ctxsol, ".*", {git, "git@github.com:YOURNAME/ctxsol.git", "master"}}
+        {ctxsol, ".*", {git, "git@github.com:billosys/ctxsol.git", "master"}}
       ]}.
 ```
 
@@ -27,4 +30,4 @@ And then do the usual:
 
 ## Usage
 
-Add content to me here!
+All, in time ...
