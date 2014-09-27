@@ -2,7 +2,7 @@
 
 <img src="resources/images/ctxsol-small-crop.png" />
 
-*An Erlang/LFE Solaris Container/Zones Library*
+*An Erlang/LFE Solaris Containers/Zones Library*
 
 ## Introduction
 
